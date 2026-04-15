@@ -156,6 +156,31 @@ h1 {
     color: var(--blue);
 }
 
+#innovation {
+    font-family: 'Inter';
+    color: var(--white);
+    
+}
+
+#innovation h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+#innovation p {
+    color: var(--white);
+    font-size: 0.75rem;
+}
+
+#innovation a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 1rem;
+    border-radius: 10%;
+}
+
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
     width: 90%;
