@@ -71,12 +71,86 @@ body {
     margin: 0 auto;
 }
 
-header {
+nav {
     background-color: var(--black);
 }
 
+nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    max-height: 0;
+}
+
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+}
+
+nav li a {
+    display: block;
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--blue);
+    transition: background-color .3s ease-in;
+}
+
+nav a:hover, nav input:hover {
+    background-color: var(--blue);
+    color: var(--black);
+}
+
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem;
+    user-select: none;
+}
+
+label span {
+    background-color: var(--white);
+    display: block;
+    height: .25rem;
+    position: relative;
+    transition: background-color .3s ease-out;
+    width: 1rem;
+}
+
+label span:before, label span:after {
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+label span:before {
+    top: .75rem;
+}
+
+label span:after {
+    top: -.75rem;
+}
+
+input {
+  display:none;
+}
+
+input:checked ~ ul {
+    max-height: 500px;
+}
+
 h1 {
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 1em;
     font-weight: bold;
     color: var(--blue);
