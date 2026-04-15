@@ -64,8 +64,23 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
-
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
+
+body {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--black);
+}
+
+h1 {
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--blue);
+}
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
@@ -88,7 +103,6 @@ table {
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
  h1::before {
     content: "";
-
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
@@ -114,7 +128,7 @@ table {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: grid-template-columns 3s ease-in;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -142,7 +156,7 @@ table {
 }
 
 
-/* MEDIA QUERIES (MEDIUM) */ 
+/* MEDIA QUERIES (MEDIUM)
 
     #results {
         grid-template-columns: 1fr 1fr;
@@ -159,4 +173,4 @@ table {
     }
 
 
-/* MEDIA QUERIES (LARGE) */
+MEDIA QUERIES (LARGE) */
