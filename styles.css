@@ -159,7 +159,7 @@ h1 {
 #innovation {
     font-family: 'Inter';
     color: var(--white);
-    
+    background-color: var(--white);
 }
 
 #innovation h2 {
@@ -179,6 +179,18 @@ h1 {
     background-color: var(--blue);
     padding: 1rem;
     border-radius: 10%;
+}
+
+#proven-results {
+    background-color: var(--blue);
+}
+
+#contact {
+    background-color: var(--black);
+}
+
+footer {
+    background-color: var(--black);
 }
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
