@@ -130,18 +130,19 @@
         <section id="contact">
         <h2>Contact Us</h2>
             <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
-                <form>
-            Full Name
+                <form action="wp.zyBooks.com/form-viewer.php" method="POST" target="_blank">
+                    <label for="name">Name<span class="required"></span></label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Email Address<span class="required"></span></label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="company-name">Company Name<span class="required"></span></label>
+                    <input type="text" name="company-name" id="company-name" required>
+                    <label for="industry">Industry<span class="required"></span></label>
+                    <input type="text" name="industry" id="industry" required>
+                    <label for="help">How can we help you?<span></span></label>
+                    <textarea name="help" id="help"></textarea>
 
-            Email Address
-
-            Company Name
-
-            Industry
-
-            How can we help you?
-
-            Submit
+                    <input type="submit" name="my-submit" id="my-submit" value="Submit">
             </form>
         </section>
         <footer>
