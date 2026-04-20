@@ -73,6 +73,12 @@ body {
 
 nav {
     background-color: var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+
 }
 
 nav ul {
@@ -84,6 +90,7 @@ nav ul {
     text-align: center;
     max-height: 0;
 }
+
 
 nav h2 {
     visibility: hidden;
@@ -181,12 +188,11 @@ h3 {
     padding: 1rem;
 }
 
-
 #innovation {
     background-color: var(--white);
     color: var(--white);
+    
 }
-
 
 #innovation a {
     text-decoration: none;
@@ -198,7 +204,6 @@ h3 {
 #expertise {
     padding: 1rem;
 }
-
 
 #expertise section {
     color: var(--white);
@@ -249,6 +254,8 @@ tr {
 #contact {
     background-color: var(--black);
     padding: 1rem;
+    color: var(--white);
+    font-family: 'Inter';
 }
 
 #contact h2 {
@@ -256,17 +263,58 @@ tr {
 }
 
 #contact p {
+    padding-bottom: 1rem;
+}
+
+#contact label {
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+
+#contact input, textarea {
+    display: block;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 24px;
+    border-color: var(--blue);
+    width: 350px;
+}
+
+
+input[type="submit"]{
+    background-color: var(--blue);
+    text-align: center;
+    padding: 1rem;
+    width: 360px;
     color: var(--white);
+    font-size: 1rem;
+    font-family: 'Inter';
 }
 
 footer {
     background-color: var(--black);
     font-family: 'Inter';
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 0rem;
+    
 }
 
 footer small {
     color: var(--white);
+    font-size: small;
+    line-height: 1.25rem;
 }
+
+footer a {
+    color: var(--blue);
+    text-decoration: underline;
+
+}
+
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
@@ -275,7 +323,7 @@ footer small {
     margin: 0 auto;
 }
 
-/* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
+/* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin o on Unsplash) */
  #innovation {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
