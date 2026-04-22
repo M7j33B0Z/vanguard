@@ -67,14 +67,12 @@ table {
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
 body {
-    max-width: 400px;
+    min-width: 400px;
     margin: 0 auto;
 }
 
 nav {
     background-color: var(--black);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 0;
@@ -191,7 +189,8 @@ h3 {
 #innovation {
     background-color: var(--white);
     color: var(--white);
-    
+    margin: 0 auto;
+
 }
 
 #innovation a {
@@ -394,11 +393,12 @@ footer a {
     animation: stepUp 1s ease-in-out forwards;
 }
 
-/* MEDIA QUERIES (MEDIUM)
+/* MEDIA QUERIES (MEDIUM) */
 
-    #results {
+    #proven-results {
         grid-template-columns: 1fr 1fr;
     }
+
     .results-container {
         flex-direction: row;
         justify-content: space-between;
@@ -410,5 +410,8 @@ footer a {
         width: 50%;
     }
 
+/*MEDIA QUERIES (LARGE)*/
+#expertise {
+    grid-template-columns: 1fr 1fr 1fr;
 
-MEDIA QUERIES (LARGE) */
+}
