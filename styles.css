@@ -395,23 +395,55 @@ footer a {
 
 /* MEDIA QUERIES (MEDIUM) */
 @media screen and (min-width: 800px){
+    .offerings {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .charts {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
     }
     .results-table {
         grid-column: 1 / 1;
         width: 50%;
     }
+
     #bar-chart {
         width: 50%;
         grid-column: 2 / -1;
     }
 }
 
-/*MEDIA QUERIES (LARGE)
-#expertise {
+/*MEDIA QUERIES (LARGE)*/
+@media screen and (min-width: 1024px){
+.offerings {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
 }
-    */
+
+.charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+    
+.results-table {
+    grid-column: 1 / 1;
+    width: 50%;
+ 
+}
+
+#bar-chart {
+    width: 50%;
+    grid-column: 2 / -1;
+
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+}
