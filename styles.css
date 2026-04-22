@@ -394,24 +394,24 @@ footer a {
 }
 
 /* MEDIA QUERIES (MEDIUM) */
-
-    #proven-results {
+@media screen and (min-width: 800px){
+    .charts {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
-    .results-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
     .results-table {
+        grid-column: 1 / 1;
         width: 50%;
     }
-    .bar-chart {
+    #bar-chart {
         width: 50%;
+        grid-column: 2 / -1;
     }
+}
 
-/*MEDIA QUERIES (LARGE)*/
+/*MEDIA QUERIES (LARGE)
 #expertise {
     grid-template-columns: 1fr 1fr 1fr;
 
 }
+    */
