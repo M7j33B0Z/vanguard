@@ -76,8 +76,26 @@ nav {
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 0;
-
 }
+
+nav .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+nav .img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: right;
+}
+
+nav .menu {
+    grid-column: 4;
+}
+
+
+
 
 nav ul {
     width: 100%;
