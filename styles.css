@@ -186,18 +186,34 @@ h3 {
     padding: 1rem;
 }
 
-#innovation {
-    background-color: var(--white);
+#hero {
     color: var(--white);
     margin: 0 auto;
+    
 
 }
 
-#innovation a {
+#hero p {
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+#hero a {
     text-decoration: none;
     background-color: var(--blue);
     padding: 1rem;
-    border-radius: 5%;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out; 
+    
+}
+
+#hero a:hover {
+    background-color: var(--red);
+    border: var(red);
+    border-radius: 5px;
+    transform: scale(1.25);
+    
 }
 
 #expertise {
@@ -282,15 +298,24 @@ tr {
     width: 350px;
 }
 
-
 input[type="submit"]{
     background-color: var(--blue);
+    border-radius: 5px;
+    border-color: var(--blue);
     text-align: center;
     padding: 1rem;
     width: 360px;
     color: var(--white);
     font-size: 1rem;
     font-family: 'Inter';
+}
+
+input[type="submit"]:hover{
+    background-color: var(--red);
+    border-color: var(red);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out; 
+    transform: scale(1.25);
 }
 
 footer {
