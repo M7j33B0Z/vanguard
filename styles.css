@@ -461,6 +461,18 @@ footer a {
 
 /*MEDIA QUERIES (LARGE)*/
 @media screen and (min-width: 1024px){
+nav ul{
+    display: inline-block;
+}
+
+label span {
+  height: 0.25rem;
+  position: relative;
+  transition: background-color .3s ease-out;
+  width: 1.5rem;
+
+}
+
 .offerings {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
