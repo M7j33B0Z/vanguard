@@ -442,7 +442,12 @@ footer a {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-   
+
+    .charts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+ 
     .results-table {
         grid-column: 1 / 1;
         width: 50%;
