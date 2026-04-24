@@ -76,7 +76,7 @@ nav {
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 0;
-    border-bottom: 1px solid var(--blue);
+    border-bottom: 2px solid var(--blue);
     
 }
 
@@ -335,6 +335,7 @@ input[type="submit"]:hover{
     transform: scale(1.25);
 }
 
+
 footer {
     background-color: var(--black);
     font-family: 'Inter';
@@ -441,11 +442,7 @@ footer a {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .charts {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-    }
+   
     .results-table {
         grid-column: 1 / 1;
         width: 50%;
