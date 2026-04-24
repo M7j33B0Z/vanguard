@@ -96,6 +96,81 @@ nav .menu {
     grid-column: 4;
 }
 
+nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    max-height: 0;
+}
+
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+}
+
+nav li a {
+    display: block;
+    font-family: 'Inter';
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--blue);
+    transition: background-color .3s ease-in;
+}
+
+nav a:hover, nav input:hover {
+    background-color: var(--blue);
+    color: var(--black);
+}
+
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem;
+    user-select: none;
+}
+
+label span {
+    background-color: var(--white);
+    display: block;
+    height: 0.25rem;
+    position: relative;
+    transition: background-color .3s ease-out;
+    width: 1.5rem;
+}
+
+label span:before, label span:after {
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+label span:before {
+    top: .75rem;
+}
+
+label span:after {
+    top: -.75rem;
+}
+
+input {
+  display:none;
+}
+
+input:checked ~ ul {
+    max-height: 500px;
+}
+
+
 h1 {
     font-family: 'Inter';
     font-size: 1em;
@@ -152,7 +227,7 @@ h3 {
 
 #hero a:hover {
     background-color: var(--red);
-    border: var(red);
+    border: var(--red);
     border-radius: 5px;
     transform: scale(1.25);
     
@@ -361,133 +436,21 @@ footer a {
     animation: stepUp 1s ease-in-out forwards;
 }
 
-/* Media query to get dropdown menu */
-
-@media screen and (min-width: 400px){
-nav ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    text-align: center;
-    max-height: 0;
-}
-
-
-nav h2 {
-    visibility: hidden;
-    height: 1px;
-}
-
-nav li a {
-    display: block;
-    font-family: 'Inter';
-    font-size: 1.5em;
-    text-decoration: none;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: var(--blue);
-    transition: background-color .3s ease-in;
-}
-
-nav a:hover, nav input:hover {
-    background-color: var(--blue);
-    color: var(--black);
-}
-
-nav label {
-    cursor: pointer;
-    display: inline-block;
-    padding: 1rem;
-    user-select: none;
-}
-
-label span {
-    background-color: var(--white);
-    display: block;
-    height: 0.25rem;
-    position: relative;
-    transition: background-color .3s ease-out;
-    width: 1.5rem;
-}
-
-label span:before, label span:after {
-    background: var(--white);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-
-label span:before {
-    top: .75rem;
-}
-
-label span:after {
-    top: -.75rem;
-}
-
-input {
-  display:none;
-}
-
-input:checked ~ ul {
-    max-height: 500px;
-}
-}
-
 /* MEDIA QUERIES (MEDIUM) */
 @media screen and (min-width: 800px){
-    nav ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    max-height: 0;
-    visibility: visible;
+    ul {
+        display: inline-flex;
+        
+    }
 
-}
+    ul li {
+        flex-direction: row;
+        gap: 0.5rem;
+        background-color: var(--black);
+        color: var(--blue);
+    }
 
-nav h2 {
-    visibility: hidden;
-    height: 1px;
-}
-
-nav li a {
-    display: inline;
-    font-family: 'Inter';
-    font-size: 1.5em;
-    text-decoration: none;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: var(--blue);
-    transition: background-color .3s ease-in;
-    visibility: visible;
-}
-
-nav a:hover, nav input:hover {
-    background-color: var(--blue);
-    color: var(--black);
-}
-
-nav label {
-    visibility: hidden;
-}
-
-label span {
-    background-color: var(--white);
-    display: block;
-    height: 0.25rem;
-    position: relative;
-    transition: background-color .3s ease-out;
-    width: 1.5rem;
-}
+    label
 
 .offerings {
         display: grid;
