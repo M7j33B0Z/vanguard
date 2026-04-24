@@ -232,7 +232,7 @@ h3 {
     background-color: var(--blue);
     color: var(--white);
     padding: 1rem;
-    padding-right: 3rem;
+    
 }
 
 table {
@@ -469,6 +469,6 @@ footer a {
 .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
+ }
 
-}
 }
