@@ -76,6 +76,8 @@ nav {
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 0;
+    border-bottom: 1px solid var(--blue);
+    
 }
 
 nav .container {
@@ -93,9 +95,6 @@ nav .img {
 nav .menu {
     grid-column: 4;
 }
-
-
-
 
 nav ul {
     width: 100%;
@@ -140,10 +139,10 @@ nav label {
 label span {
     background-color: var(--white);
     display: block;
-    height: .25rem;
+    height: 0.25rem;
     position: relative;
     transition: background-color .3s ease-out;
-    width: 1rem;
+    width: 1.5rem;
 }
 
 label span:before, label span:after {
@@ -241,7 +240,7 @@ h3 {
 #expertise section {
     color: var(--white);
     background-color: var(--blue);
-    border-radius: 5%;
+    border-radius: 5px;
     margin: 0.5rem;
     padding: 1rem;
 }
