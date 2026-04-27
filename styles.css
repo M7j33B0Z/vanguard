@@ -71,6 +71,10 @@ body {
     margin: 0 auto;
 }
 
+header {
+    background-color: var(--black);
+}
+
 nav {
     background-color: var(--black);
     padding-left: 1rem;
@@ -93,8 +97,7 @@ nav .img {
 }
 
 nav .menu {
-    display: grid;
-    grid-column: 4;
+   grid-column: 4;
     
 }
 
@@ -212,6 +215,10 @@ h3 {
 }
 
 #hero {
+    transition: all 1s ease-in-out;
+}
+
+#hero {
     color: var(--white);
     margin: 0 auto;
    
@@ -231,7 +238,6 @@ h3 {
     border-radius: 5px;
     display: inline-block;
     transition: all 0.5s ease-in-out;
-    
     
 }
 
@@ -493,11 +499,12 @@ footer a {
 
 }
 
-.charts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-content: center;
+.container {
+    width: 100%;
+}
 
+form {
+    width: 100%;
 }
     
 .results-table {
