@@ -95,16 +95,11 @@ nav {
 }
 
 nav span {
-    display: flex;
-    justify-content: left;
+    display: grid;
+    justify-items: right;
 }
 
 nav ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
     text-align: center;
     max-height: 0;
 }
@@ -122,6 +117,7 @@ nav li a {
     padding: 1rem;
     text-transform: uppercase;
     font-weight: bold;
+    background-color: var(--black);
     color: var(--blue);
     transition: background-color .3s ease-in;
 }
@@ -133,7 +129,7 @@ nav a:hover, nav input:hover {
 
 nav label {
     cursor: pointer;
-    display: inline-block;
+    display: block;
     padding: 1rem;
     user-select: none;
 
@@ -141,7 +137,6 @@ nav label {
 
 label span {
     background-color: var(--white);
-    display: block;
     height: 0.25rem;
     position: relative;
     transition: background-color .3s ease-out;
@@ -168,12 +163,12 @@ label span:after {
 
 input {
   display:none;
+
 }
 
 input:checked ~ ul {
     max-height: 500px;
 }
-
 
 h1 {
     font-family: 'Inter';
@@ -449,19 +444,26 @@ footer a {
 
 /* MEDIA QUERIES (MEDIUM) */
 @media screen and (min-width: 800px){
+    nav label {
+        display: none;
+    }
+
     ul {
-        display: inline-flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        position: absolute;
+        top: 20px;
+        right: 176px;
         
     }
 
     ul li {
-        flex-direction: row;
         gap: 0.5rem;
-        background-color: var(--black);
-        color: var(--blue);
+        align-items: center;
+    
     }
 
-        .offerings {
+    .offerings {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -487,36 +489,32 @@ footer a {
 
 /*MEDIA QUERIES (LARGE)*/
 @media screen and (min-width: 1024px){
-.offerings {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    .offerings {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
 
-}
+    }
 
-.container {
-    width: 100%;
-}
-
-form {
-    width: 100%;
-}
+    .container {
+        width: 100%;
+    }
     
-.results-table {
-    grid-column: 1 / 1;
-    width: 50%;
+    .results-table {
+        grid-column: 1 / 1;
+        width: 50%;
  
-}
+    }
 
-#bar-chart {
-    width: 50%;
-    grid-column: 2 / -1;
+    #bar-chart {
+        width: 50%;
+        grid-column: 2 / -1;
 
-}
+    }
 
-.contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
- }
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
 
 }
