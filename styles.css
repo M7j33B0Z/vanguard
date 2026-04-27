@@ -69,36 +69,29 @@ table {
 body {
     min-width: 400px;
     margin: 0 auto;
+    
 }
 
 header {
     background-color: var(--black);
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header .container {
+  display: grid;
+  grid-template-columns: 25px 80px;
+    
 }
 
 nav {
-    background-color: var(--black);
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 0;
-    border-bottom: 2px solid var(--blue);
-    
-}
-
-nav .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-nav .img {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-content: center;
-    justify-content: right;
-}
-
-nav .menu {
-   grid-column: 4;
-    
+  position: absolute;
+  top: -13px;
+  right: -156px;
 }
 
 nav span {
@@ -252,6 +245,7 @@ h3 {
 #expertise {
     align-content: center;
     padding: 1rem;
+    
 }
 
 #expertise section {
