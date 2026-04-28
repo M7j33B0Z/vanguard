@@ -229,7 +229,7 @@ h3 {
     background-color: var(--red);
     border: 1px solid var(--red);
     border-radius: 5px;
-    transform: scale(1.25);
+    transform: scale(1.1);
         
 }
 
@@ -334,7 +334,7 @@ input[type="submit"]:hover{
     background-color: var(--red);
     border: 1px solid var(--red);
     border-radius: 5px;
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
 
 
@@ -520,19 +520,38 @@ footer a {
 
     }
 
+    .charts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
     .results-table {
-       width: 50%;
- 
+        grid-column: 1 / 1;
+        width: 100%;
+        align-content: center;
+    }
+
+    table {
+        width: 450px;
     }
 
     #bar-chart {
-        width: 50%;
-
+        width: 100%;
+        grid-column: 2 / 2;
     }
 
-    .contact {
+
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    form {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 
     
@@ -542,16 +561,26 @@ footer a {
         font-size: 0.8rem;
         margin-bottom: 24px;
         border-color: var(--blue);
-        width: 900px;
-}
+        width: 450px;
+    }
+
+    #contact textarea {
+        height: 90px;
+    }
+
+    #my-submit {
+        height: 55px;
+        padding: 0.5rem;
+
+    }
 
     input[type="submit"]{
         background-color: var(--blue);
         border: 1px solid var(--blue);
         border-radius: 5px;
         text-align: center;
-        padding: 1rem;
-        width: 900px;
+        padding: 0rem;
+        width: 450px;
         color: var(--white);
         font-size: 1rem;
         font-family: 'Inter';
@@ -562,7 +591,7 @@ footer a {
         background-color: var(--red);
         border: 1px solid var(--red);
         border-radius: 5px;
-        transform: scale(1.25);
+        transform: scale(1.1);
     }
 
 
