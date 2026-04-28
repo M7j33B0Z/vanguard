@@ -245,6 +245,11 @@ h3 {
     border-radius: 5px;
     margin: 0.5rem;
     padding: 1rem;
+    
+}
+
+#expertise section:hover {
+    transform:translate(10px,-20px);
 }
 
 #proven-results {
@@ -277,7 +282,7 @@ tr {
     background-color: var(--black);
 }
 
-#charRow {
+.charRow {
     background-color: var(--charcoal);
 }
 
