@@ -207,7 +207,12 @@ h3 {
     color: var(--white);
     margin: 0 auto;
     backdrop-filter: blur(10px);
+    
+    
+}
 
+#hero h2, a, p {
+    transition: all 5s ease-in;
 }
 
 #hero p {
@@ -222,7 +227,6 @@ h3 {
     padding: 1rem;
     border-radius: 5px;
     display: inline-block;
-    transition: all 0.5s ease-in-out;
     
 }
 
@@ -250,6 +254,7 @@ h3 {
 
 #expertise section:hover {
     transform:translate(10px,-20px);
+
 }
 
 #proven-results {
