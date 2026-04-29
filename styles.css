@@ -248,6 +248,10 @@ h3 {
     padding: 1rem;
 }
 
+#expertise section:hover {
+    transform:translate(10px,-20px);
+}
+
 #proven-results {
     background-color: var(--blue);
     color: var(--white);
