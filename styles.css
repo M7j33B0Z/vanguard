@@ -221,24 +221,6 @@ h3 {
     padding: 1rem;
 }
 
-.container {
-    animation-name: enter;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    
-}
-
-@keyframes enter {
-    from {
-        visibility: hidden;
-    }
-
-    to {
-        visibility: visible;
-    }
-}
-
 #hero {
     color: var(--white);
     margin: 0 auto;
@@ -482,6 +464,12 @@ footer a {
 
 /* MEDIA QUERIES (MEDIUM) */
 @media screen and (min-width: 800px){
+    nav {
+        position: absolute;
+        top: -57px;
+        right: -125px;
+    }
+
     nav label {
         display: none;
     }
@@ -489,16 +477,8 @@ footer a {
     nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        position: absolute;
-        top: 20px;
-        right: 176px;
+        background-color: transparent;
         
-    }
-
-    ul li {
-        gap: 0.5rem;
-        align-items: center;
-    
     }
 
     .offerings {
