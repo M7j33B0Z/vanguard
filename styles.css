@@ -203,17 +203,31 @@ h3 {
     padding: 1rem;
 }
 
+.container {
+    animation-name: enter;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    
+}
+
+@keyframes enter {
+    from {
+        visibility: hidden;
+    }
+
+    to {
+        visibility: visible;
+    }
+}
+
 #hero {
     color: var(--white);
     margin: 0 auto;
     backdrop-filter: blur(10px);
     
-    
 }
 
-#hero h2, a, p {
-    transition: all 5s ease-in;
-}
 
 #hero p {
     padding: 1rem;
