@@ -88,11 +88,27 @@ header .container {
     
 }
 
-.container h2, h3 {
+#expertise .container h2 {
     transition: transform 0.3s ease-in-out;    
 }
 
-.container h2, h3:hover {
+#expertise .container h2:hover {
+    transform: translateY(-10px);
+}
+
+#proven-results .container h2, h3 {
+    transition: transform 0.3s ease-in-out;    
+}
+
+#proven-results .container h2:hover, h3:hover {
+    transform: translateY(-10px);
+}
+
+#contact .container h2, h3 {
+    transition: transform 0.3s ease-in-out;    
+}
+
+#contact .container h2:hover, h3:hover {
     transform: translateY(-10px);
 }
 
